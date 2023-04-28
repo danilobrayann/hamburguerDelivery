@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+    height: 100vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    top: 0px;
+    padding: 25px;
+    width: 100%;
+    position: fixed;
+    background-color: Orange;
+    align-items: center;
+    z-index: 99;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: red;
+}
+
+main nav img {
+    position: absolute;
+    filter: drop-shadow(10px 5px 4px rgba(35, 45, 66, 0.5));
+    width: 80px;
+    height: 80;
+}
+
+ #lupa{
+    position: absolute;
+   margin-left: 69%;
+    width: 15px;
+    height: 15px;
+}
+
+.form-control {
+text-align: center;
+    border-radius: 30px;
+    width: 200px;
+ 
+
+}
+
+.btn {
+ color:white;
+ border: white 3px solid;
+ 
+}
+
+.btn-outline-success:hover{
+    background-color: red;
+    border: white 3px solid;
+}
+
+.btn-outline-success:active{
+    
+    background-color: #5B1E0B !important;
+    border: white 3px solid !important;
+}
+section h1 {
+    color: darkorange;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    margin-top: 8%;
+}
+
+.bg5{
+   margin-top: 120px;
+    width: 320px;
+}
+
+#h2pedido {
+    color: darkorange;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    margin-top: 1%;
+    text-align: center;
+    
+}
+
+section {
+    margin-top: 2%;
+}
+
+
+
+.carousel-item img {
+    object-fit: contain;
+   
+}
+
+#icon1 {
+    color: red;
+}
+
+.section-pagina2{
+    margin-bottom: 5%;
+}
+
+.pagina2 {
+  
+    display: inline-block;
+
+    width: 100%;
+    background-color: Gainsboro;
+   
+   
+}
+
+.card{
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    height: 150px;
+    width: 200px;
+    background-color: yellow;
+  background-image: url(../img/PEDIDO.png); 
+    display: inline-block;
+    margin-right: 3%;
+    margin-left: 3%;
+   margin-top: 3%;
+   background-repeat: no-repeat;
+   bottom: 25px;
+   
+}
+
+.list-group-item{
+    background-color: black;
+    color: red;
+}
+
+.card-img-top{ filter: drop-shadow(10px 5px 4px rgba(35, 45, 66, 0.5));}
+
+
+.card-body button{
+   
+    background-color: #25B63C;
+    width: 180px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    margin-left: 15%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.card-link {
+text-decoration: none;
+color: white;
+}
+
+.pagina3{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+   
+}
+
+footer{
+    padding: 10%;
+    background-color: Orange;
+}
+
+.carousel-control-prev-icon{
+    height: 80px;
+    width: 50px;
+   border-radius: 50px;
+    background-color:black;
+}
+
+.carousel-control-next-icon{
+    background-color:black;
+    height: 80px;
+    width: 50px;
+   border-radius: 50px;
+}
+
+.carousel-control-prev{
+  margin-top: 30%;
+}
+
+.carousel-control-next{
+    margin-top: 30%;
+}
+
+
+
+.btn-wpp{
+    border: none;
+    position: fixed;
+    margin-left: 95%;
+    height: 50px;
+    bottom: 5%;
+    font-size: 40px;
+
+   
+ 
+ animation: bell 2s ease-in-out infinite;
+
+ 
+}
+
+@keyframes bell {
+    0% { transform: rotate(0deg); }
+  10% { transform: rotate(50deg); }
+  30% { transform: rotate(-50deg); }
+  45% { transform: rotate(15deg); }
+  55% { transform: rotate(-15deg); }
+  60% { transform: rotate(0deg); }
+}
+
+
+
+
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    --color-text: #ffffff;
+    --color-background: #5B1E0B;
+    --color-outline: #ff145b80;
+    --color-shadow: #00000080;
+  
+  }
+  
+  .btn-content {
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+    border-radius: 100px;
+    box-shadow: 0 0 0.2em 0 var(--color-background);
+  }
+  
+  .btn-content:hover, .btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+  }
+  
+  .btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+  }
+  
+  .btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 25px;
+  }
+  
+  .icon-arrow {
+    width: 00px;
+    margin-left: 15px;
+    position: relative;
+    top: 6%;
+  }
+    
+  /* SVG */
+  #arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  #arrow-icon-two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  
+  /* SVG animations */
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+  
+    50% {
+      fill: var(--color-background);
+    }
+  
+    100% {
+      fill: white;
+    }
+  }
+  
+  /* Button animations */
+  @-webkit-keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+  
+  @keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+
+/* Estilos para telas médias */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	/* Adicione aqui os estilos para telas médias */
+}
+
+/* Estilos para telas pequenas */
+@media only screen and (max-width: 400px) {
+	/* Adicione aqui os estilos para telas pequenas */
+
+    nav a{
+        display: none;
+    }
+}
